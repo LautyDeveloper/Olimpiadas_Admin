@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+header {
+  width: 100%;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  padding: 30px;
+  background-color: #3e7140;
+}
+
+header nav img {
+  border-radius: 500px;
+  width: 50px;
+  height: 50px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  background-color: #2e282a;
+  color: #fff;
+  min-height: 90vh;
+}
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+}
+.article-pedidos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 95%;
+  padding-bottom: 20px;
+  height: 100%;
+}
+.lista-pedidos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #8c5215;
+  width: 90%;
+  padding-inline: 10%;
+  padding: 10px 0 10px 0;
+  border-radius: 20px;
+  gap: 10px;
+}
+.pedido-carta {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #744124;
+  width: 95%;
+  padding-inline: 5%;
+  border-radius: 10px;
+  padding: 10px;
+  color: #fff;
+  font-weight: bolder;
+}
+pedido-carta p {
+  width: 40%;
+}
+.btns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 60%;
+}
+.pedido-carta select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 50%;
+  background-color: #4671a4;
+  border: none;
+  border-radius: 10px;
+  padding: 7px 10px;
+  font-size: 12px;
+  color: #fff;
+}
+.btn-cancelar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  background-color: #d03737;
+  border-radius: 10px;
+  padding: 10px 10px;
+  border: none;
+  color: #fff;
+  height: 30px;
+  font-size: 12px;
+}
+
+@media (min-width: 1440px) {
+  pedido-carta p {
+    width: 70%;
+  }
+  .btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 30%;
+  }
+  .pedido-carta select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    background-color: #4671a4;
+    border: none;
+    border-radius: 10px;
+    padding: 7px 10px;
+    font-size: 12px;
+    color: #fff;
+  }
+  .pedido-carta option {
+    font-size: 15px;
+  }
+  .btn-cancelar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    background-color: #d03737;
+    border-radius: 10px;
+    padding: 10px 10px;
+    border: none;
+    color: #fff;
+    height: 30px;
+    font-size: 12px;
+  }
+}

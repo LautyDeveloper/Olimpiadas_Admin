@@ -1,0 +1,7 @@
+body .containerchico{
+    height: 50%;
+}
+
+body .containerchico form .input{
+    height: 20%;
+}

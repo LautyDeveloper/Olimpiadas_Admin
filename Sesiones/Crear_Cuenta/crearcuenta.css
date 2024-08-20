@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    margin: 0 ;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color:  #2E282A;
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body h1{
+    color: white;
+    font-size: 3rem;
+}
+
+body p{
+    color: white;
+    font-size: 1.7rem;
+}
+
+body p a{
+    color: white;
+}
+
+body .container{
+    background-color: #E98C35;
+    height: 60%;
+    width: 85%;
+    border-radius: 40px;
+    display: grid;
+    place-items: center;
+}
+
+body .container form{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+body .container form .input{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 15%;
+}
+
+body .container form .input label{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+body .container form .input input{
+    height: 50%;
+    border: none;
+    outline: none;
+    background-color: #CD721D;
+    border-radius: 20px;
+    padding: 0 0 0 20px;
+    font-size: 1.1rem;
+    color: white;
+}
+
+body .container form .input input::placeholder{
+    color: white;
+    font-weight: 600;
+}
+
+body .container form input[type="submit"]{
+    background-color: #CD721D;
+    outline: none;
+    border: none;
+    height: 12%;
+    border-radius: 20px;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+}

@@ -1,0 +1,224 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100%;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    padding: 30px;
+    background-color: #3E7140;
+}
+
+header nav img{
+    border-radius: 500px;
+    width: 50px;
+    height: 50px;
+}
+
+header nav a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+main{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 90vh;
+    background-color: #2E282A;
+    color: #fff;
+}
+.lista-productos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.lista-productos p{
+    font-size: 15px;
+    font-weight: bolder;
+}
+.lista-productos select{
+    border-radius: 20px;
+    color: #fff;
+    background-color: #3B664D;
+    border: none;
+    padding: 5px;
+}
+
+.lista-productos select:focus{
+    outline: none;
+}
+.lista-productos option{
+    font-size: 15px;
+}
+.lista-productos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #8C5215;
+    width: 90%;
+    padding-inline: 10%;
+    padding: 10px 0 10px 0;
+    border-radius: 20px;
+    gap: 10px;
+}
+.lista-productos .producto-carta{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    padding-inline: 5%;
+    background-color: #744124;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    padding: 10px;
+    color: #fff;
+    font-weight: bolder;
+
+}
+.btns{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.btn-editar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4671A4;
+    border-radius: 10px;
+    padding: 10px 10px;
+    border: none;
+    color: #fff;
+    height: 30px;
+}
+.btn-borrar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D03737;
+    border-radius: 10px;
+    padding: 10px 10px;
+    border: none;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+}
+.btn-editar img{
+    height: 18px;
+    width: 18px;
+}
+.btn-borrar img{
+    height: 20px;
+    width: 20px;
+}
+.btn-cargar{
+    padding: 10px 15px;
+    background-color: #744124;
+    border: none;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 40px;
+}
+
+/* VENTANA MODAL "VER MAS" */
+
+.ventana-modal{
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 90vh;
+    position: fixed;
+    z-index: 10;
+    text-align: center;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+}
+
+.ventana-modal .ventana-modal__content{
+    width: 90%;
+    height: 80%;
+    background-color: #2E282A;
+    box-shadow: 0px 0px 200px white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ventana-modal .ventana-modal__content .close{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    height: 10%;
+    font-size: 3rem;
+    color: white;
+}
+
+.oculto{
+    display: none;
+}
+
+.primerDiv{
+    height: 90%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.form-editar{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 90%;
+}
+.form-editar p{
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 700;
+}
+
+.form-editar div{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 1.4rem;
+}
+.form-editar div input{
+    background-color: #494145;
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 40px;
+}
+.form-editar button{
+    background-color: #3E7140;
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 40px;
+
+}
